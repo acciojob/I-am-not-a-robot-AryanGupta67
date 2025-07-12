@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>I'm not a robot</title>
+  <title>I am not a robot</title>
   <style>
     .img-tile {
       width: 100px;
       height: 100px;
-      object-fit: cover;
-      cursor: pointer;
       margin: 5px;
+      cursor: pointer;
       border: 2px solid transparent;
     }
+
     .selected {
       border: 2px solid green;
     }
@@ -19,13 +19,14 @@
 </head>
 <body>
   <h3 id="h">Please click on the identical tiles to verify that you are not a robot.</h3>
-  <div id="image-container" style="display:flex; flex-wrap: wrap;"></div>
-  <br>
-  <button id="reset" style="display: none;">Reset</button>
-  <button id="verify" style="display: none;">Verify</button>
+  <div id="image-container"></div>
+  <br />
+  <input type="button" id="reset" value="Reset" style="display:none;" />
+  <input type="button" id="verify" value="Verify" style="display:none;" />
   <p id="para"></p>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
